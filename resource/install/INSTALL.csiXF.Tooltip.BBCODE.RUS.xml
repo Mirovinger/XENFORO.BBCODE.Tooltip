@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="csiXF_bbCode_964E60C3" title="(CSI/XF/BBCODE) Tooltip" version_string="1.0.0" version_id="1" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="custom_bb_code_tooltip_title" version_id="1" version_string="1.0.0"><![CDATA[Всплывающая подсказка]]></phrase>
+    <phrase title="custom_bb_code_tooltip_desc" version_id="1" version_string="1.0.0"><![CDATA[Отображение содержимого во всплывающей подсказке XenForo.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="csiXF_bbCode_964E60C3_tag_tooltip" version_id="1" version_string="1.0.0"><![CDATA[<xen:require css="csiXF_bbCode_964E60C3.css" />
+<span class="csiXF_bbCode_964E60C3 bbCodeTooltip Tooltip" title="{xen:raw $option}">{xen:raw $content}</span>]]></template>
+    <template title="csiXF_bbCode_964E60C3.css" version_id="1" version_string="1.0.0"><![CDATA[.bbCodeTooltip {
+  cursor: help;
+  border-bottom: 1px dotted;
+}]]></template>
+  </templates>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes>
+    <bb_code bb_code_id="tooltip" bb_code_mode="callback" has_option="yes" callback_class="CSI\BbCodeTooltip\BbCode\Formatter\Base" callback_method="getBbCodeTooltip" option_regex="" trim_lines_after="0" plain_children="1" disable_smilies="1" disable_nl2br="1" disable_autolink="1" allow_empty="0" allow_signature="0" editor_icon_url="" sprite_mode="0" sprite_params_x="" sprite_params_y="" active="1">
+      <replace_html><![CDATA[]]></replace_html>
+      <replace_html_email><![CDATA[]]></replace_html_email>
+      <replace_text><![CDATA[]]></replace_text>
+      <example><![CDATA[[TOOLTIP=Добро пожаловать в Зверополис - современный город, населенный самыми разными животными, от огромных слонов до крошечных мышек. Зверополис разделен на районы, полностью повторяющие естественную среду обитания разных жителей - здесь есть и элитный район Площадь Сахары и неприветливый Тундратаун...]Зверополис[/TOOLTIP]]]></example>
+    </bb_code>
+  </bb_codes>
+</addon>
